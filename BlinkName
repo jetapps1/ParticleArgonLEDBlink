@@ -1,0 +1,31 @@
+int led1 = D7;
+
+void setup() {
+
+  pinMode(led1, OUTPUT);
+
+}
+
+void loop() {
+    // First Name: jet - Dot Dash Dash Dash Dot Dash
+    Dot();
+    Dash();
+    Dash();
+    Dash();
+    Dot();
+    Dash();
+}
+
+void Dot() {
+    digitalWrite(led1,HIGH); 
+    delay (300); 
+    digitalWrite(led1,LOW); 
+    delay (300);
+    }
+    
+void Dash() {
+    digitalWrite(led1,HIGH); 
+    delay (900); 
+    digitalWrite(led1,LOW); 
+    delay (300);
+    }
